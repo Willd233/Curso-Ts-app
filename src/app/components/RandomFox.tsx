@@ -1,11 +1,10 @@
-export const RandomFox = ({ imageURL }: { imageURL: string }) => {
+export const RandomFox = ({ image }: { image: string }) => {
     return (
       <img
         width={300}
         height="auto"
-        src={imageURL}
+        src={image}
         alt="Random Fox"
       />
     );
   };
-  
