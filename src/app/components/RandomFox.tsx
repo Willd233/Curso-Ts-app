@@ -1,10 +1,14 @@
+import { useRef } from "react";
+
 export const RandomFox = ({ image }: { image: string }) => {
-    return (
-      <img
-        width={300}
-        height="auto"
-        src={image}
-        alt="Random Fox"
-      />
-    );
-  };
+const node = useRef<HTMLImageElement>(null);
+
+  return (
+    <img
+    className="foxImage"
+      ref={node}
+      src={image}
+      alt="Random Fox"
+    />
+  );
+};
