@@ -3,14 +3,15 @@
 import { useState, useEffect } from "react";
 import { LazyImagen } from "./components/RandomFox";
 import AddFoxButton from "./components/buttom";
+import { random } from "lodash";
 
 export default function Home() {
-  const randomImageNumber = Math.floor(Math.random() * 123) + 1;
+  const randomImageNumber = random(1,123);
   const generateId = () => Math.random().toString(36).substr(2.9);
 
-  type ImageItem = { id: string; url: string };
+  
 
-  const [images, setImages] = useState<Array<ImageItem>>([]);
+  const [images, setImages] = useState<Array<IFoxImageItem>>([]);
   const addNewFox = () => {
     const newImageItem = {
       id: generateId(),
@@ -24,7 +25,7 @@ export default function Home() {
 
   return (
     <main>
-      <h1>hola</h1>
+      <h1>Lazy Loanding</h1>
       <AddFoxButton onClick={addNewFox} />
       {images.map(({ id, url }) => (
         <div key={id}>
