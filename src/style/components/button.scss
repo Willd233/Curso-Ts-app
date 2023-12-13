@@ -1,0 +1,17 @@
+.button {
+    width: 100px;
+    height: 50px;
+    background: #e40202;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    border-radius: 50px;
+    border-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    &:hover {
+        background: #491717;
+        transform: scale(1.1);
+        color: white;
+      }
+}
