@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "build": "^0.1.4",
+    "export": "^0.1.337",
     "lodash": "^4.17.21",
     "next": "^14.0.4",
     "react": "^18",
