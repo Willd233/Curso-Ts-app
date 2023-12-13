@@ -5,7 +5,7 @@ import '../style/index.scss'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Next App',
+  title: 'New Next App',
   description: 'Generated to create the following application',
 }
 
