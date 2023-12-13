@@ -92,10 +92,4 @@ jobs:
           source: ./out
           # Don't need next export as it's incorporated into the build step
 
-**Changes made:**
 
-* **Removed `next export` step:** Next.js 13 builds include static HTML generation by default, making `next export` unnecessary.
-* **Updated `build` command:** Removed the `--output-dir` flag as builds now output to the `out` directory by default.
-* **Minor adjustments:** Removed unnecessary comments and updated commands with the `runner` output for compatibility.
-
-This updated workflow should work seamlessly with Next.js 13 and deploy your site to GitHub Pages without the need for the `next export
